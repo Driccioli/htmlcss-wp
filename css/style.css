@@ -6,10 +6,9 @@
     font-size: 20px;
 }
 
-.everything{
+#everything{
     width: 1200px; 
-    margin: auto; 
-    /* background-color: lightgray; */
+    margin: auto;
 }
 
 img{
@@ -48,8 +47,6 @@ li{
     background-size: contain;
     border-radius: 20px;
     height: 600px;
-    /* filter: brightness(0.7); */
-    color: white;
 }
 
 .darken-background{
@@ -62,7 +59,6 @@ li{
 }
 .overlay{
     color: white;
-    /* filter:none; */
 }
 
 
@@ -75,12 +71,7 @@ h1{
 }
 .container-2{
     margin-top: 15px;
-    /* background-color: blue; */
     color:gray;
-}
-
-.container-2 > *{
-    /* background-color: rgb(175, 247, 250); */
 }
 
 .container-2 img{
@@ -97,17 +88,16 @@ h1{
 .fl-top{
     float:left;
     width: 1200px;
+    margin-bottom:25px;
 }
 
 .fl-left{
     float: left;
-    margin-top:10px;
     margin-right: 10px;
     width: 260px;
 }
 .fl-center{
     float: left;
-    margin-top:10px;
     margin-left: 10px;
     margin-right: 10px;
     width: 640px;
@@ -119,8 +109,8 @@ h1{
     object-fit: cover;
 }
 .fl-right{
-    float: right;
-    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
     width: 260px;
 }
 
@@ -132,11 +122,12 @@ h1{
 h2{
     color: black;
 }
+
 /* Footer */
 footer{
     margin-top: 20px;
     text-align: center;
-    /* background-color: rgb(255, 193, 255); */
+    
     font-size: 25px;
 }
 
