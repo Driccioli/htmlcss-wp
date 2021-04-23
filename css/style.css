@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.everything{
+    width: 1200px; 
+    margin: auto; 
+    background-color: lightgray;
+}
+
+/* header */
+
+.container-header{
+    height: 100px;
+    padding: 5px;
+    background-color: hotpink;
+}
+
+/* Primo container */
+
+.container-1{
+    margin-top: 15px;
+    background-color: yellowgreen;
+    height: 300px;
+}
+
+/* Container blu, che contiene i float */
+.container-2{
+    margin-top: 15px;
+    height: 500px;
+    background-color: blue;
+}
+
+.container-2 > *{
+    background-color: cadetblue;
+}
+
+/* Parte float */
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.fl-top{
+    float:left;
+    width: 1200px;
+    height: 100px;
+}
+
+.fl-left{
+    float: left;
+    margin-top:10px;
+    margin-right: 10px;
+    height: 380px;
+    width: 230px;
+}
+.fl-center{
+    float: left;
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 380px;
+    width: 700px;
+}
+.fl-right{
+    float: right;
+    margin-top: 10px;
+    height: 380px;
+    width: 230px;
+}
+
+/* Footer */
+footer{
+    margin-top: 10px;
+    height: 150px;
+    background-color: purple;
+}
