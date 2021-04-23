@@ -9,7 +9,11 @@
 .everything{
     width: 1200px; 
     margin: auto; 
-    background-color: lightgray;
+    /* background-color: lightgray; */
+}
+
+img{
+    filter: brightness(0.7);
 }
 
 /* header */
@@ -38,13 +42,29 @@ li{
 .container-1{
     margin-top: 15px;
     background-image:url("../img/banner.jpg");
-    background-color: #FEEBE4;
+    background-color: rgba(254, 235, 228, 1);
     background-repeat:no-repeat;
     background-position-x: center;
     background-size: contain;
     border-radius: 20px;
     height: 600px;
+    /* filter: brightness(0.7); */
+    color: white;
 }
+
+.darken-background{
+    border-radius: inherit;
+    width:inherit;
+    height: inherit;
+    background-color: rgba(0,0,0,0.3);
+    padding-top: 450px;
+    padding-left: 20px;
+}
+.overlay{
+    color: white;
+    /* filter:none; */
+}
+
 
 /* Container blu, che contiene i float */
 
@@ -55,13 +75,16 @@ h1{
 }
 .container-2{
     margin-top: 15px;
-    height: 500px;
-    background-color: blue;
+    /* background-color: blue; */
     color:gray;
 }
 
 .container-2 > *{
-    background-color: rgb(175, 247, 250);
+    /* background-color: rgb(175, 247, 250); */
+}
+
+.container-2 img{
+    border-radius: 20px;
 }
 
 /* Parte float */
@@ -74,39 +97,50 @@ h1{
 .fl-top{
     float:left;
     width: 1200px;
-    height: 100px;
 }
 
 .fl-left{
     float: left;
     margin-top:10px;
     margin-right: 10px;
-    height: 380px;
-    width: 230px;
+    width: 260px;
 }
 .fl-center{
     float: left;
     margin-top:10px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 380px;
-    width: 700px;
+    width: 640px;
+}
+
+.fl-center > img{
+    height: 230px;
+    width: inherit;
+    object-fit: cover;
 }
 .fl-right{
     float: right;
     margin-top: 10px;
-    height: 380px;
-    width: 230px;
+    width: 260px;
 }
 
+.fl-left > img, .fl-right > img{
+    width: inherit;
+    height: 230px;
+}
+
+h2{
+    color: black;
+}
 /* Footer */
 footer{
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
-    background-color: rgb(255, 193, 255);
-    font-size: 15px;
+    /* background-color: rgb(255, 193, 255); */
+    font-size: 25px;
 }
 
 #heart{
+    font-size: 40px;
     color: red;
 }
